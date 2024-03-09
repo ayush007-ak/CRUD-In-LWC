@@ -1,0 +1,11 @@
+<template>
+    <h1 style="text-align:center;font-weight:bold">CRUD Example</h1>
+    <lightning-card  title="Create Contact Record">
+        <lightning-input name="firstName" type="text" label="First Name" onchange={handleChange}></lightning-input>
+        <lightning-input name="lastName" type="text" label="Last Name" onchange={handleChange}></lightning-input>
+        <lightning-input name="email" type="email" label="Email" onchange={handleChange}></lightning-input>
+    
+        <lightning-button variant="brand" label="Submit"  onclick={submitForm}></lightning-button>
+    </lightning-card>
+    
+</template>
