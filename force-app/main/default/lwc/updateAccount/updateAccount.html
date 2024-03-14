@@ -1,0 +1,11 @@
+<template>
+    <lightning-card  title="Account Update">
+       
+        <lightning-input name="accountName" type="text" value={accountName} label="Account Name" onchange={handleChange}></lightning-input>
+        <lightning-input name="accountWebsite" type="text" value={accountWebsite} label="Account Website" onchange={handleChange}></lightning-input>
+        <lightning-input name="accountPhone" type="text" value={accountPhone} label="Account Phone" onchange={handleChange}></lightning-input>
+        <lightning-input name="accountNoOfEmployees" type="text" value={accountNoOfEmployees} label="No Of Employees" onchange={handleChange}></lightning-input>
+    
+        <lightning-button variant="brand" label="Submit"  onclick={submitForm}></lightning-button>
+    </lightning-card>
+</template>
