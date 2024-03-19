@@ -1,0 +1,27 @@
+<template>
+    <table>
+               <tr>
+                   <th>Contact Name</th>
+                   <th>Title</th>
+                   <th>Email</th>
+                   <th>Action</th>
+               </tr>
+   
+              
+          
+           <template for:each={contactRecords} for:item="contact">
+               <tr key={contact.Id}>
+                   <td>{contact.Name}</td>
+                   <td>{contact.Title}</td>
+                   <td>{contact.Email}</td>
+                   <td>
+                       <lightning-icon size="x-small" variant="error" data-contactid={contact.Id} onclick={deleteContactRec} icon-name="utility:delete" alternative-text="Delete" title="Delete">
+                       </lightning-icon>
+                   </td>
+               </tr>
+   
+               
+           </template>
+       </table>
+       
+   </template>
